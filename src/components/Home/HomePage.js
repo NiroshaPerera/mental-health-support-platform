@@ -1,5 +1,6 @@
 import React from 'react';
 import FeaturedContent from './FeaturedContent';
+import './HomePage.css';
 
 const HomePage = () => (
   <div>
