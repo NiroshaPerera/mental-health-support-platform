@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import './ContentLibrary.css';
 import axios from 'axios';
 
 const ContentLibrary = () => {

@@ -1,37 +1,36 @@
 import React, { useState, useContext } from 'react';
-import { AuthContext } from '../../context/AuthContext';
 import { useHistory } from 'react-router-dom';
+import { AuthContext } from '../../context/AuthContext';
+import './LoginPage.css';
 
 const LoginPage = () => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
+  const [credentials, setCredentials] = useState({ username: '', password: '' });
   const { login } = useContext(AuthContext);
   const history = useHistory();
 
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setCredentials({ ...credentials, [name]: value });
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    login(username, password);
-    history.push('/');
+    // Call login with the credentials and history
+    login({ username: credentials.username }, history);
   };
 
   return (
-    <div>
+    <div className="login-page">
       <h2>Login</h2>
       <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="Username"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-          required
-        />
-        <input
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          required
-        />
+        <div>
+          <label>Username</label>
+          <input type="text" name="username" value={credentials.username} onChange={handleChange} required />
+        </div>
+        <div>
+          <label>Password</label>
+          <input type="password" name="password" value={credentials.password} onChange={handleChange} required />
+        </div>
         <button type="submit">Login</button>
       </form>
     </div>
