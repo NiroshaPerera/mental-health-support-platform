@@ -9,6 +9,14 @@
   text-align: center;
   margin-bottom: 20px;
 }
+.home-page img {
+  width: 70%;
+  max-width: 500px;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 8px;
+  align-items: center;
+}
 
 .home-page p {
   font-size: 1.2rem;

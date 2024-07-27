@@ -20,8 +20,14 @@ export const AuthProvider = ({ children }) => {
     history.push('/');
   };
 
+  const updateUser = (userData) => {
+    // Update user logic here
+    setUser(userData); // This line should be modified to reflect actual update logic
+    console.log("User updated:", userData);
+  };
+
   return (
-    <AuthContext.Provider value={{ user, login, register, logout }}>
+    <AuthContext.Provider value={{ user, login, register, logout, updateUser }}>
       {children}
     </AuthContext.Provider>
   );

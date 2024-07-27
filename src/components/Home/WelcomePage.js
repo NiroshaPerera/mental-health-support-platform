@@ -4,11 +4,9 @@ import './WelcomePage.css';
 
 const WelcomePage = () => (
   <div className="welcome-page">
-    <h1>Welcome to the MindMatters<br>Mental Health Support Platform</br></h1>
+    <img src="https://img.freepik.com/free-vector/mental-health-flat-concept-with-people-dealing-with-psychological-problems-vector-illustration_1284-80677.jpg?t=st=1722081423~exp=1722085023~hmac=2cc63d135e996fe75e88d4783aeb540fa07bb692813d18edcdc73612f810bdfc&w=996" alt="Mental health support" className="welcome-image" />
+    <h1>Welcome to the Mental Health Support Platform</h1>
     <p>Please register or log in to continue.</p>
-    <div className="welcome-image">
-      <img src="https://img.freepik.com/premium-photo/mental-health-concept-art-illustration-flat-style_941097-39309.jpg?w=740" alt="Welcome Image" />
-    </div>
     <div className="welcome-buttons">
       <Link to="/register">
         <button>Register</button>
