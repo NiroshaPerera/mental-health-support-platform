@@ -1,0 +1,63 @@
+
+.thread-view-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    height: 75vh;
+  }
+  
+
+  .thread-view-container h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+
+  .thread-view-container .post {
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+
+  .thread-view-container .post h4 {
+    margin: 0;
+    font-size: 1.2em;
+    color:#4caf50;
+  }
+  
+
+  .thread-view-container .post p {
+    font-size: 1em;
+    margin: 10px 0 0;
+    color: #555;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .thread-view-container {
+      padding: 10px;
+    }
+  
+    .thread-view-container h2 {
+      font-size: 1.5em;
+    }
+  
+    .thread-view-container .post {
+      padding: 10px;
+    }
+  
+    .thread-view-container .post h4 {
+      font-size: 1em;
+    }
+  
+    .thread-view-container .post p {
+      font-size: 0.9em;
+    }
+  }
+  

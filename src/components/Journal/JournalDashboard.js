@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import './JournalDashboard.css'; 
 
 const JournalDashboard = () => {
   const [entries, setEntries] = useState([
@@ -12,7 +13,7 @@ const JournalDashboard = () => {
   };
 
   return (
-    <div>
+    <div className="journal-dashboard">
       <h1>Journal Dashboard</h1>
       <Link to="/journal/new-entry">Add New Entry</Link>
       <ul>

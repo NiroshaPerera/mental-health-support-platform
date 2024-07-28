@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './DirectorySearch.css'; 
 
 const therapists = [
   { id: 1, name: 'Dr. Jane Doe', specialty: 'Anxiety', location: 'New York, NY' },
@@ -21,7 +22,7 @@ const DirectorySearch = () => {
   };
 
   return (
-    <div>
+    <div className="directory-search-container">
       <h1>Therapist Directory</h1>
       <input
         type="text"

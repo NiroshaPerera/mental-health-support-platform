@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './AssessmentDashboard.css';
 
 const AssessmentDashboard = () => {
   const quizzes = [
@@ -9,7 +10,7 @@ const AssessmentDashboard = () => {
   ];
 
   return (
-    <div>
+    <div className="assessment-dashboard">
       <h1>Self-Assessment Tools</h1>
       <ul>
         {quizzes.map(quiz => (

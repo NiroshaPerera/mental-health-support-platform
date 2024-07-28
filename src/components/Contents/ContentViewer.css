@@ -1,0 +1,39 @@
+
+.content-viewer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    height: 75vh;
+  }
+  
+ 
+  .content-viewer h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+
+  .content-viewer p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .content-viewer {
+      padding: 10px;
+    }
+  
+    .content-viewer h1 {
+      font-size: 2em;
+    }
+  
+    .content-viewer p {
+      font-size: 1em;
+    }
+  }
+  

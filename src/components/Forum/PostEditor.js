@@ -1,4 +1,5 @@
 import React, { useState } from 'react'; 
+import './PostEditor.css'; // Import the CSS file
 
 const PostEditor = () => {
   const [content, setContent] = useState('');
@@ -11,7 +12,7 @@ const PostEditor = () => {
   };
 
   return (
-    <div>
+    <div className="post-editor-container">
       <h2>Create a New Post</h2>
       <form onSubmit={handleSubmit}>
         <textarea

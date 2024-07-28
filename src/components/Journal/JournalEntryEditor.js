@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
+import './JournalEntryEditor.css';
 
 const JournalEntryEditor = () => {
   const [content, setContent] = useState('');
@@ -7,14 +8,14 @@ const JournalEntryEditor = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle submission logic here
+    
     console.log('New journal entry:', content);
     setContent('');
     history.push('/journal');
   };
 
   return (
-    <div>
+    <div className="journal-entry-editor">
       <h2>New Journal Entry</h2>
       <form onSubmit={handleSubmit}>
         <textarea

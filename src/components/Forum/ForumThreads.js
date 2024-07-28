@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
+import './ForumThreads.css';
 
-// Placeholder data for threads
 const threads = {
   1: [
     { id: 1, title: 'How do you manage anxiety?' },
@@ -26,7 +26,7 @@ const ForumThreads = () => {
   }
 
   return (
-    <div>
+    <div className="forum-threads-container">
       <h2>Threads</h2>
       <ul>
         {forumThreads.map(thread => (

@@ -1,0 +1,63 @@
+
+.therapist-profile-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .therapist-profile-container h1 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+  }
+  
+  
+  .therapist-profile-container p {
+    font-size: 1em;
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  
+  .therapist-profile-container button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .therapist-profile-container button:hover {
+    background-color:  #45a049;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .therapist-profile-container {
+      padding: 10px;
+    }
+  
+    .therapist-profile-container h1 {
+      font-size: 1.5em;
+    }
+  
+    .therapist-profile-container p {
+      font-size: 0.9em;
+    }
+  
+    .therapist-profile-container button {
+      font-size: 0.9em;
+    }
+  }
+  

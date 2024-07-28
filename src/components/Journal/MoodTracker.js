@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './MoodTracker.css';
 
 const MoodTracker = () => {
   const [moodEntries, setMoodEntries] = useState([
@@ -15,7 +16,7 @@ const MoodTracker = () => {
   };
 
   return (
-    <div>
+    <div className="mood-tracker">
       <h2>Mood Tracker</h2>
       <form onSubmit={handleMoodSubmit}>
         <select value={mood} onChange={(e) => setMood(e.target.value)} required>

@@ -1,0 +1,57 @@
+
+.assessment-dashboard {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    height: 75vh;
+  }
+  
+
+  .assessment-dashboard h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+
+  .assessment-dashboard ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  
+  .assessment-dashboard li {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+  
+
+  .assessment-dashboard h3 a {
+    text-decoration: none;
+    color: #4caf50;
+    transition: color 0.3s ease;
+  }
+  
+
+  .assessment-dashboard h3 a:hover {
+    color:  #45a049;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .assessment-dashboard {
+      padding: 10px;
+    }
+  
+    .assessment-dashboard h1 {
+      font-size: 2em;
+    }
+  
+    .assessment-dashboard h3 a {
+      font-size: 1.2em;
+    }
+  }
+  

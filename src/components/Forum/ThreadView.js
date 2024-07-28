@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import './ThreadView.css'; 
 
-// Placeholder data for posts
 const posts = {
   1: [
     { id: 1, author: 'User1', content: 'I manage anxiety by practicing mindfulness.' },
@@ -22,10 +22,10 @@ const ThreadView = () => {
   }
 
   return (
-    <div>
+    <div className="thread-view-container">
       <h2>Thread</h2>
       {threadPosts.map(post => (
-        <div key={post.id}>
+        <div key={post.id} className="post">
           <h4>{post.author}</h4>
           <p>{post.content}</p>
         </div>

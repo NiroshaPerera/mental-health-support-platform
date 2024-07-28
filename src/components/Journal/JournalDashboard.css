@@ -1,0 +1,101 @@
+
+.journal-dashboard {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .journal-dashboard h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+
+  .journal-dashboard a {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 1em;
+    color: #4caf50;
+    text-decoration: none;
+  }
+  
+  .journal-dashboard a:hover {
+    text-decoration: underline;
+  }
+  
+
+  .journal-dashboard ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+ 
+  .journal-dashboard li {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .journal-dashboard li h3 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    color:  #4caf50;
+  }
+  
+  .journal-dashboard li p {
+    font-size: 1em;
+    color: #555;
+  }
+  
+
+  .journal-dashboard li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  .journal-dashboard button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color:  #4caf50;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .journal-dashboard button:hover {
+    background-color:  #45a049;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .journal-dashboard h1 {
+      font-size: 1.5em;
+    }
+  
+    .journal-dashboard li h3 {
+      font-size: 1.2em;
+    }
+  
+    .journal-dashboard li p {
+      font-size: 0.9em;
+    }
+  
+    .journal-dashboard button {
+      font-size: 0.9em;
+    }
+  }
+  

@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import './TherapistProfile.css'; 
 
 const therapists = {
   1: { name: 'Dr. Jane Doe', specialty: 'Anxiety', location: 'New York, NY', bio: 'Expert in anxiety management.' },
@@ -16,7 +17,7 @@ const TherapistProfile = () => {
   }
 
   return (
-    <div>
+    <div className="therapist-profile-container">
       <h1>{therapist.name}</h1>
       <p>Specialty: {therapist.specialty}</p>
       <p>Location: {therapist.location}</p>

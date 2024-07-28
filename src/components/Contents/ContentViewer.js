@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
+import './ContentViewer.css'; 
 
 const ContentViewer = () => {
   const { id } = useParams();
@@ -26,7 +27,7 @@ const ContentViewer = () => {
   }
 
   return (
-    <div>
+    <div className="content-viewer">
       <h1>{article.title}</h1>
       <p>{article.content}</p>
     </div>

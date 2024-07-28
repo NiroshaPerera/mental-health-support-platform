@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './ForumOverview.css'; 
 
 const ForumOverview = () => {
-  // Placeholder data for forums
   const forums = [
     { id: 1, title: 'General Discussion', description: 'Talk about anything related to mental health.' },
     { id: 2, title: 'Anxiety Support', description: 'Share your experiences and get support for anxiety.' },
@@ -10,7 +10,7 @@ const ForumOverview = () => {
   ];
 
   return (
-    <div>
+    <div className="forum-overview-container">
       <h1>Support Forums</h1>
       <ul>
         {forums.map(forum => (

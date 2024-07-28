@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
+import './Quiz.css'; 
 
 const quizzes = {
   1: {
@@ -50,7 +51,7 @@ const Quiz = () => {
   }
 
   return (
-    <div>
+    <div className="quiz-container">
       <h1>{quiz.title}</h1>
       <form onSubmit={(e) => { e.preventDefault(); handleSubmit(); }}>
         {quiz.questions.map((question, index) => (
@@ -67,7 +68,7 @@ const Quiz = () => {
         <button type="submit">Submit</button>
       </form>
       {submitted && (
-        <div>
+        <div className="results">
           <h2>Results</h2>
           <p>Your responses have been submitted. Here are some recommendations based on your answers:</p>
           <ul>
